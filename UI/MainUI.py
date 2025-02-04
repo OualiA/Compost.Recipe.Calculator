@@ -1692,6 +1692,7 @@ class Ui_MainWindow(object):
         self.ChLangFcomboBox.setItemText(0, "ar_Ar")
         self.ChLangFcomboBox.setItemText(1, "fr_FR")
         self.ChLangFcomboBox.setItemText(2, "en_US")
+        self.ChLangFcomboBox.setItemText(3, "zh_CN")
 
         self.labeLogol.setText("")
         self.TITLEMAIN.setText(translation["Compost Recipe Calculator"])
