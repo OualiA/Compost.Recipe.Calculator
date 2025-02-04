@@ -96,6 +96,7 @@ class Ui_MainWindow(object):
         self.ChLangFcomboBox.addItem("")
         self.ChLangFcomboBox.addItem("")
         self.ChLangFcomboBox.addItem("")
+        self.ChLangFcomboBox.addItem("")
         self.ChLangFcomboBox.setObjectName(u"ChLangFcomboBox")
         self.ChLangFcomboBox.setMinimumSize(QSize(0, 30))
         self.ChLangFcomboBox.setCursor(QCursor(Qt.CursorShape.PointingHandCursor))
