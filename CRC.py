@@ -2,7 +2,6 @@
 # IMPORTS
 ########################################################################
 import webbrowser
-
 from PySide6.QtWidgets import QMainWindow, QApplication
 from PySide6.QtCore import QPropertyAnimation, QEasingCurve, QRect, Qt, QPoint
 from PySide6.QtGui import QIcon
@@ -11,11 +10,9 @@ import sys
 # IMPORT GUI FILE
 from UI.MainUI import Ui_MainWindow
 ########################################################################
-# Animation
+# CALCULATION
 ########################################################################
 from sympy import symbols, Eq, solve
-
-
 ########################################################################
 # MAIN WINDOW CLASS
 ########################################################################
@@ -236,7 +233,7 @@ class MainWindow(QMainWindow):
         feed_lines = [self.ui.NameM01LineE, self.ui.NameM02FLineE, self.ui.NameM03LineE]
         groupbox_titles = [self.ui.Feed01F, self.ui.Feed02F, self.ui.Feed03F]
         lang = self.ui.ChLangFcomboBox.currentIndex()
-        names_feed = {0: "المادة الأولية", 1: "Matières Premières", 2: "FeedStock"}
+        names_feed = {0: "المادة الأولية", 1: "Matières Premières", 2: "FeedStock", 3: "原料"}
 
         for i, line_edit in enumerate(feed_lines):
             if line_edit.text().strip():
